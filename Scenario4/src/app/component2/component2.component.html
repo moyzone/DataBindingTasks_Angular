@@ -1,0 +1,5 @@
+<h2>Inside Parent Component</h2>
+<h3>{{"Hello "+childData}}</h3>
+<input #myInput type="text/">
+<button (click)="send(myInput.value)">send to child</button> 
+<app-component1 (childEvent)="childData=$event" [parentData]="childMessage"></app-component1>

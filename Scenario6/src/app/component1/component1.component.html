@@ -1,0 +1,5 @@
+<h2>Inside Parent Component</h2>
+<input #myInput type="text/">
+<button (click)="send(myInput.value)">send to child</button> 
+<app-component2 [parentData1]="childMessage"></app-component2>
+<app-component3 [parentData2]="childMessage"></app-component3>
